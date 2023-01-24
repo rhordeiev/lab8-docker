@@ -4,7 +4,7 @@ import axios from "axios";
 
 function App() {
   function sendData() {
-    axios.get("http://3.90.80.88/users").then((data) => {
+    axios.get("http://3.90.80.88:8080/users").then((data) => {
       console.log(data);
     });
   }
