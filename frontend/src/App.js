@@ -4,11 +4,9 @@ import axios from "axios";
 
 function App() {
   function sendData() {
-    axios
-      .get("https://ec2-3-90-80-88.compute-1.amazonaws.com/users")
-      .then((data) => {
-        console.log(data);
-      });
+    axios.get("http://3.90.80.88/users").then((data) => {
+      console.log(data);
+    });
   }
 
   return (
